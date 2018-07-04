@@ -1,0 +1,25 @@
+<resources>
+    <!--The name of the app-->
+    <string name="app_name">Media Player</string>
+
+    <!--Text indicating the media now playing activity-->
+    <string name="now_playing_text">Now Playing</string>
+
+    <!--Text indicating the media player library-->
+    <string name="library_text">Library</string>
+
+    <!--Text indicating to play a song-->
+    <string name="play_text">Play</string>
+
+    <!--Text indicating to pause a song-->
+    <string name="pause_text">Pause</string>
+
+    <!--Text indicating the home screen of the app-->
+    <string name="home_text">Home</string>
+
+    <!--Text indicating a song title-->
+    <string name="song_text">Song</string>
+
+    <!--Text indicating a song artist-->
+    <string name="artist_text">Artist</string>
+</resources>

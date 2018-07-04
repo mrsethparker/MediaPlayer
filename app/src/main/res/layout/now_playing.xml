@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NowPlaying">
+
+    <TextView
+        android:id="@+id/playingSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nowPlayingStartMargin"
+        android:layout_marginTop="@dimen/nowPlayingTopMargin"
+        android:text="@string/song_text"
+        app:layout_constraintStart_toStartOf="@+id/playingArtist"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playingArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/narrowMargin"
+        android:text="@string/artist_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playingSong" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nowPlayingPlayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:text="@string/play_text"
+        app:layout_constraintBottom_toBottomOf="@+id/nowPlayingHomeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nowPlayingHomeButton" />
+
+    <Button
+        android:id="@+id/nowPlayingPauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pause_text"
+        app:layout_constraintStart_toStartOf="@+id/nowPlayingPlayButton"
+        app:layout_constraintTop_toBottomOf="@+id/nowPlayingPlayButton" />
+
+    <Button
+        android:id="@+id/nowPlayingHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/extraWideMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:text="@string/home_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/nowPlayingLibraryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/library_text"
+        app:layout_constraintStart_toStartOf="@+id/nowPlayingHomeButton"
+        app:layout_constraintTop_toBottomOf="@+id/nowPlayingHomeButton" />
+</android.support.constraint.ConstraintLayout>

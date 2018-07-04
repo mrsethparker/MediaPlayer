@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Width of the song library list-->
+    <dimen name="libraryListWidth">0dp</dimen>
+
+    <!--Top height of song library list-->
+    <dimen name="libraryListHeight">448dp</dimen>
+
+    <!--Standard margin for the entire app-->
+    <dimen name="standardMargin">16dp</dimen>
+
+    <!--Extra wide margin for the entire app-->
+    <dimen name="extraWideMargin">64dp</dimen>
+
+    <!--Starting margin for the home button on the library activity-->
+    <dimen name="libraryHomeBtnMarginStart">52dp</dimen>
+
+    <!--Wide margin for the entire app-->
+    <dimen name="wideMargin">24dp</dimen>
+
+    <!--Narrow margin for the entire app-->
+    <dimen name="narrowMargin">8dp</dimen>
+
+    <!--Starting margin for the now playing activity-->
+    <dimen name="nowPlayingStartMargin">1dp</dimen>
+
+    <!--Top margin for the now playing activity-->
+    <dimen name="nowPlayingTopMargin">147dp</dimen>
+</resources>
